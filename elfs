@@ -1,0 +1,17 @@
+
+#ÖDEV
+
+import random as rnd
+sayi = rnd.randint(1,11)
+print("------------------")
+sayac = 0
+girilen = int(input("Tahminizi giriniz :"))
+while sayi != girilen:
+    sayac += 1
+    if sayac == 3:
+        print("GAME OVER!")
+        break
+    else:
+        girilen = int(input("Tahminizi giriniz: "))
+if sayi==girilen :
+    print(" TEBRİKLER!")
